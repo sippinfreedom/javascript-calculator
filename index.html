@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!-- metadata -->
+ <link rel="shortcut icon" href="https://www.netclipart.com/pp/m/437-4371218_calculator-png-download-transparent-background-calculator-clipart.png" type="image/x-icon"></head>
+ <meta name='copyright' content='sippinfreedom.xyz'>
+ <meta name="revisit-after" content="1 days">
+ <meta name='distribution' content='Global'>
+ <meta name='HandheldFriendly' content='True'>
+ <meta name='MobileOptimized' content='320'>
+  <!-- javascripts-->
+<script src="core.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+<script type="text/javascript" src="assets/javascript/AnimatedTitle.js"></script>
+<script type="text/javascript" src="assets/javascript/BlockInspect.js"></script>
+<script type="text/javascript" src="assets/javascript/codesecure.js"></script>
+<script type="text/javascript" src="assets/javascript/codesecure2.js"></script>
+<script type="text/javascript" src="assets/javascript/j.query.js"></script>
+<script type="text/javascript" src="assets/javascript/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/magic.js"></script>
+<script type="text/javascript" src="assets/javascript/main.js"></script>
+
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <iframe allow="autoplay" id="audio" src="assets/audio/silence.mp3" style="display:none"></iframe>
+  <video autoplay class="fadeIn" disablePictureInPicture disableRemotePlayback id="vid" loop playsinline>
+    <source src="assets/media/lofi.mp4" type="video/mp4" />
+    <script type="text/javascript">
+      const video = document.currentScript.parentElement;
+      video.volume = 0.15;
+
+      function pause_resume() {
+        const button = document.getElementById("pause_resume_button");
+
+        if (video.paused) {
+          video.play()
+          button.textContent = "resume video";
+        } else {
+          video.pause()
+          button.textContent = "pause video";
+        }
+      }
+    </script>
+  </video>
+  <link href="styles.css" rel="stylesheet">
+  <link href="assets/css/animation.min.css" rel="stylesheet">
+  <link href="assets/css/fonts.min.css" rel="stylesheet">
+  <link href="assets/css/master.min.css" rel="stylesheet">
+  <link href="animate.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="calculator-grid animated fadeInDown">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <button data-all-clear class="span-two">AC</button>
+    <button data-delete>DEL</button>
+    <button data-operation>÷</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>*</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>-</button>
+    <button data-number>.</button>
+    <button data-number>0</button>
+    <button data-equals class="span-two">=</button>
+  </div>
+
+
+
+
+  <div class="font-left animated fadeInDown">
+    <br><p style="font-size:1.5em;" class="font-bold font-white" id="app"></p>
+    <br><a style="font-size:1.1em;" class="font-bold font-white" href="https://discord.gg/ZjcDQT2" target="_blank">discord.gg</a>
+    
+    <a class="toggle"style="color:white" id="app"></a>
+  </div>
+  <div class="font-right-bottom animated fadeInUp">
+    <a style="font-size:0.9em;" class="font-bold font-white" href="javascript:void(0);" onclick="pause_resume()">pause/resume button</a>
+    <p style="font-size: 0.9em;" class="font-light font-white no-margin">ty for checking it out :)</p>
+    <br>
+  </div>
+
+  
+
+
+
+
+  <script>
+  
+    var app = document.getElementById('app');
+    
+    var typewriter = new Typewriter(app, {
+        loop: true
+    });
+    
+    typewriter.typeString('welcome to freedoms calculator :)')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('spend your time here calculating...')
+        .pauseFor(100)
+        .deleteChars(14)
+        .typeString('<strong>thinking.</strong>')
+        .pauseFor(2500)
+        .deleteChars(9)
+        .typeString('<strong>RELAXING!!<strong>')
+        .pauseFor(300)
+        .deleteAll()
+        .typeString('whatever it is, i hope that yuo')
+        .deleteChars(3)
+        .typeString('you have an amazing day.!!')
+        .pauseFor(555000)
+        .deleteAll()
+        .start();
+        
+    </script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
